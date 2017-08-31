@@ -3,15 +3,19 @@
 {
   "extends": "airbnb",
   "globals": {
-    "document": true
+    "document": true,
+    "window": true,
+    "navigator": true
   },
   "rules": {
-    "linebreak-style": 0,
-    "import/no-extraneous-dependencies": 0,
-    "import/no-unresolved": 0,
-    "react/forbid-prop-types": 0,
-    "no-plusplus": 0,
-    "no-underscore-dangle": 0,
-    "import/extensions": 0
+    "linebreak-style": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": "off",
+    "react/forbid-prop-types": "off",
+    "no-plusplus": "off",
+    "no-underscore-dangle": "off",
+    "import/extensions": "off",
+    "react/prefer-stateless-function": "warn",
+    "no-unused-vars": "warn"
   }
 }
