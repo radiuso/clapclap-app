@@ -1,8 +1,9 @@
 import React, { PropTypes } from 'react';
+import Navbar from '../../components/Navbar';
 
 const Layout = ({ children }) => (
-  <div className="not-found">
-    hey hey
+  <div>
+    <Navbar />
     { children }
   </div>
 );
