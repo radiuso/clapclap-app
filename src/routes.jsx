@@ -10,7 +10,6 @@ const routes = (
     <Route path="/login" component={Login} />
     <Layout>
       <Switch>
-        <Redirect to="/login" />
         <Route component={NotFound} />
       </Switch>
     </Layout>
