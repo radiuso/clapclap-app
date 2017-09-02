@@ -1,6 +1,10 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 @import '~semantic-ui-css/semantic.css';
 
-@import './abstracts/variables';
+@import
+  './abstracts/variables',
+  './abstracts/mixins',
+  './abstracts/typography';
+
 @import './base/base';

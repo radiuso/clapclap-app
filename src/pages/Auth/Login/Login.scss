@@ -1,0 +1,28 @@
+@import '../../../styles/abstracts/variables';
+@import '../../../styles/components/shadows';
+
+.login {
+  background-image: linear-gradient( 135deg, $primary-color 10%, $secondary-color 100%);
+  overflow: hidden;
+
+  &--shape {
+    @extend .shadow-2;
+
+    height:100vh;
+    width:100vw;
+    transform: skewX(-15deg) skewY(-15deg);
+
+    background: $default-bg-color;
+  }
+
+  .login--container {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+  }
+
+  .login--form {
+
+  }
+}

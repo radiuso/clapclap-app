@@ -1,0 +1,4 @@
+@import './mixins';
+
+@include font-face(Entra, '/assets/fonts/Entra/Entra-Caps', 500, normal, otf woff);
+@include font-face(Clasia, '/assets/fonts/ClasiaFont/ClasiaFont', 500, normal, ttf);
