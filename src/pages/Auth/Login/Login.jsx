@@ -1,13 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Login extends Component {
-  render() {
-    return (
-      <div>
-        <button className="ui button">test</button>
-      </div>
-    );
-  }
-}
+const Login = () => (
+  <div>test</div>
+);
 
 export default Login;
