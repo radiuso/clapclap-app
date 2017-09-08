@@ -12,6 +12,7 @@ class Login extends Component {
       newProps.history.push('/');
     }
   }
+
   render() {
     const { auth } = this.props;
     return (
