@@ -22,6 +22,7 @@ const LoginForm = ({ onValidSubmit, isLoading, ...rest }) => (
       }}
       errorLabel={errorLabel}
       required
+      autoFocus
       {...rest}
     />
 
