@@ -5,7 +5,7 @@ import { Menu } from 'semantic-ui-react';
 const Navbar = () => (
   <Menu>
     <NavLink to="/" className="item">Clap Clap</NavLink>
-    <NavLink to="/test" className="item" activeClassName="active">Test</NavLink>
+    <NavLink to="/subjects" className="item" activeClassName="active">Subjects</NavLink>
   </Menu>
 );
 
