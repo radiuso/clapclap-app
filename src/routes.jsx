@@ -5,14 +5,14 @@ import Layout from './pages/Layout';
 import NotFound from './pages/NotFound';
 import Login from './pages/Auth/Login';
 
-import Subjects from './pages/Subjects';
+import subjectsRoutes from './pages/Subjects/routes';
 
 const routes = (
   <Switch>
     <Route path="/login" component={Login} />
     <Layout>
       <Switch>
-        <Route path="/subjects" component={Subjects} />
+        {subjectsRoutes}
         <Route component={NotFound} />
       </Switch>
     </Layout>

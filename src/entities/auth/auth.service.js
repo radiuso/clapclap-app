@@ -1,5 +1,5 @@
-import axios from 'axios';
-import { API_URL } from '../../constants.js';
+// import axios from 'axios';
+// import { API_URL } from '../../constants.js';
 
 export default {
   login(info) {
