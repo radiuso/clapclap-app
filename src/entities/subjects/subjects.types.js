@@ -1,2 +1,0 @@
-export const FETCH_SUBJECTS_SUCCESS = '@clapclap/FETCH_SUBJECTS_SUCCESS';
-export const FETCH_SUBJECTS_ERROR = '@clapclap/FETCH_SUBJECTS_ERROR';
