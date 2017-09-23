@@ -2,11 +2,13 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Card, Container } from 'semantic-ui-react';
 
+import { setTitle } from '../../../entities/app/app.actions';
 import { fetchAll } from '../../../entities/ideas/ideas.actions';
 import IdeaItem from '../../../components/IdeaItem';
 
 class IdeaList extends Component {
   componentWillMount() {
+    setTitle('Ideas');
     fetchAll();
   }
 
