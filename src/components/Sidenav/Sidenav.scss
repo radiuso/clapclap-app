@@ -1,0 +1,12 @@
+@import '../../styles/abstracts/variables';
+
+.sidenav {
+  position: fixed;
+  top: 15vh;
+  left: 1vw;
+  height: 85vh;
+
+  .header {
+    font-size: 1em;
+  }
+}

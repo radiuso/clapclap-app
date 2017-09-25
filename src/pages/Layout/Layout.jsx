@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
+import Sidenav from '../../components/Sidenav';
 import Navbar from '../../components/Navbar';
 
 const Layout = ({ children, app }) => (
@@ -9,6 +10,7 @@ const Layout = ({ children, app }) => (
       <title>{ app.app_title }</title>
     </Helmet>
     <Navbar />
+    <Sidenav />
     { children }
   </div>
 );

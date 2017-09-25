@@ -3,9 +3,10 @@ import { NavLink } from 'react-router-dom';
 import { Menu } from 'semantic-ui-react';
 
 const Navbar = () => (
-  <Menu>
-    <NavLink to="/" className="item">Clap Clap</NavLink>
-    <NavLink to="/ideas" className="item" activeClassName="active">Ideas</NavLink>
+  <Menu
+    fixed="top"
+  >
+    <Menu.Item header as={NavLink} to="/" name="ClapCalp" />
   </Menu>
 );
 
