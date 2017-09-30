@@ -3,7 +3,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { routerReducer, routerMiddleware } from 'react-router-redux';
 import createHistory from 'history/createBrowserHistory';
 import isUndefined from 'lodash/isUndefined';
-
+import en from './i18n/en.json';
 import reducers from './reducers';
 
 // Create a history of your choosing (we're using a browser history in this case)
@@ -20,6 +20,10 @@ const mergedReducers = {
 };
 
 const initialState = {
+  intl: {
+    locale: 'en',
+    messages: en,
+  },
 };
 
 // TODO remove devtool in prod

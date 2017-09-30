@@ -1,0 +1,11 @@
+{
+  "action.login": "Login",
+
+  "label.login": "Email",
+  "label.password": "Password",
+
+  "placeholder.login": "ex: test@example.com",
+
+  "validation.auth.required": "How can I authenticate you without this?",
+  "validation.email.format": "This is not an email adress. An email is like: test@example.com"
+}
