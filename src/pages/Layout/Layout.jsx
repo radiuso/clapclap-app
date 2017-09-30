@@ -1,7 +1,8 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
-import Sidenav from '../../components/Sidenav';
+import { Container } from 'semantic-ui-react';
 import Navbar from '../../components/Navbar';
 
 const Layout = ({ children, app }) => (
@@ -10,8 +11,9 @@ const Layout = ({ children, app }) => (
       <title>{ app.app_title }</title>
     </Helmet>
     <Navbar />
-    <Sidenav />
-    { children }
+    <Container className="app-content">
+      { children }
+    </Container>
   </div>
 );
 

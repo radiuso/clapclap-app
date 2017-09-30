@@ -1,0 +1,5 @@
+@import '../abstracts/mixins';
+
+.gradient-blue {
+  @include gradient(#FFD26F, #3677FF);
+}

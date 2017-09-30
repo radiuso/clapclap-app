@@ -3,8 +3,14 @@
 @import '~semantic-ui-css/semantic.css';
 
 @import
-  './abstracts/variables',
+  './abstracts/helpers',
   './abstracts/mixins',
-  './abstracts/typography';
+  './abstracts/typography',
+  './abstracts/variables';
+
+@import
+  './components/cards',
+  './components/gradients',
+  './components/shadows';
 
 @import './base/base';
