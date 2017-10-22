@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Menu, Input, Icon } from 'semantic-ui-react';
+import { Menu, Input, Dropdown } from 'semantic-ui-react';
 import './Navbar.scss';
 
 const Navbar = () => (
@@ -21,9 +21,12 @@ const Navbar = () => (
     </Menu.Menu>
 
     <Menu.Menu position="right">
-      <Menu.Item>
-        <Icon name="user" /> My user
-      </Menu.Item>
+      <Dropdown item text="My user">
+        <Dropdown.Menu>
+          <Dropdown.Item icon="settings" text="Account Settings" />
+          <Dropdown.Item as={NavLink} to="/logout" icon="log out" text="Logout" />
+        </Dropdown.Menu>
+      </Dropdown>
     </Menu.Menu>
   </Menu>
 );

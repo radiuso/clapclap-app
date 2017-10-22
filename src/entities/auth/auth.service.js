@@ -3,7 +3,7 @@
 
 export default {
   login(info) {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       setTimeout(() => {
         resolve(info);
       }, 1000);
