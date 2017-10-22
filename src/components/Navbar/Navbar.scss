@@ -1,0 +1,53 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
+.app {
+  .ui.menu {
+    background-color: $primary-color;
+
+    .item {
+      color: $contract-primary-color;
+
+      &.active {
+        color: $contract-primary-color;
+
+        &:hover {
+          color: $contract-secondary-color;
+        }
+      }
+
+      &:hover {
+        color: $contract-secondary-color;
+      }
+
+      &::before {
+        width: 0;
+      }
+
+      > a:not(.ui) {
+        color: $contract-primary-color;
+      }
+    }
+
+    .search-menu {
+      width: 50%;
+      margin: 0 auto;
+
+      .search-item {
+        width: 60%;
+        margin: 0 auto;
+
+        .search-input {
+          color: $contract-primary-color;
+
+          > input {
+            @include placeholder-color($contract-primary-color);
+            color: $contract-primary-color;
+            border: none;
+            background-color: $light-transparent-color;
+          }
+        }
+      }
+    }
+  }
+}

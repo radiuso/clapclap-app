@@ -1,7 +1,10 @@
 @import './mixins';
 
-$primary-color: #FAD7A1;
-$secondary-color: #E96D71;
+$primary-color: #FF6A1F;
+$light-transparent-color: rgba(255,255,255,0.2);
+$secondary-color: #FAD7A1;
+$contract-primary-color: #FBFBFC;
+$contract-secondary-color: #FFFFFF;
 
 $default-bg-color: rgb(255, 255, 255);
 $primary-bg-color: shade($default-bg-color, 10%);
