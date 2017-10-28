@@ -4,6 +4,7 @@ $primary-color: #FF6A1F;
 $light-transparent-color: rgba(255,255,255,0.2);
 $secondary-color: #FAD7A1;
 $contract-primary-color: #FBFBFC;
+$hight-contract-primary-color: tint($contract-primary-color, 10%);
 $contract-secondary-color: #E4DFDF;
 
 $default-bg-color: rgb(255, 255, 255);
