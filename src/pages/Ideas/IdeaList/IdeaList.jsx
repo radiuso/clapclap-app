@@ -1,20 +1,22 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Card, Container } from 'semantic-ui-react';
 
 import { setTitle } from '../../../entities/app/app.actions';
 import { fetchAll } from '../../../entities/ideas/ideas.actions';
-import IdeaItem from '../../../components/IdeaItem';
+import IdeaCardItem from '../../../components/IdeaCardItem';
 
 class IdeaList extends Component {
-  componentWillMount() {
+  constructor() {
+    super();
     setTitle('Ideas');
     fetchAll();
   }
 
   render() {
     const list = this.props.ideas.map(idea => (
-      <IdeaItem
+      <IdeaCardItem
         key={idea.id}
         idea={idea}
       />
@@ -22,7 +24,7 @@ class IdeaList extends Component {
 
     return (
       <Container>
-        <Card.Group>
+        <Card.Group itemsPerRow="3">
           { list }
         </Card.Group>
       </Container>
